@@ -3,10 +3,7 @@ import SidebarToggleIcon from './icons/SidebarToggleIcon';
 
 const Header = () => {
     return (
-        <header className="flex justify-between items-center p-4">
-            <button>
-                <SidebarToggleIcon />
-            </button>
+        <header className="flex justify-end items-center p-4">
             <div className="text-sm text-gray-400">
                 Your plan ends in 0 days. <a href="#" className="text-blue-500 underline">Resubscribe</a>
             </div>

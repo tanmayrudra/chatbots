@@ -63,7 +63,7 @@ const Sidebar = () => {
           <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center font-bold text-lg">
             C
           </div>
-          <span className="text-lg font-bold ml-2">MyEnd</span>
+          <span className="text-lg font-bold ml-2">Chatbots</span>
         </div>
         <motion.button
           whileHover={{ scale: 1.05 }}

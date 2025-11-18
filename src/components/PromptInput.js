@@ -29,7 +29,7 @@ const PromptInput = ({ onSend, onInputChange, disabled }) => { // Accept disable
     };
 
     return (
-        <form onSubmit={handleSubmit} className="relative w-full max-w-3xl mx-auto my-8">
+        <form onSubmit={handleSubmit} className="relative w-full max-w-3xl mx-auto my-8 mt-2">
             {isMenuOpen && (
                 <div className="absolute bottom-full left-0 w-full mb-2 flex justify-center">
                     <div className="bg-gray-700 rounded-lg p-2 flex items-center space-x-2">

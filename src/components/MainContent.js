@@ -49,10 +49,9 @@ const MainContent = () => {
   return (
     <div className="flex-1 flex flex-col bg-gray-900 text-sm">
       <Header />
-      <main className="flex-1 flex flex-col items-center p-4 w-full">
+      <main className="flex-1 flex flex-col items-center p-4 w-full relative">
         {showWelcome ? (
           <div className="flex-1 flex flex-col items-center justify-center w-full">
-            <Welcome />
             <div className="w-full max-w-3xl mx-auto mt-8">
               <PromptInput onSend={handleSend} onInputChange={handleInputChange} disabled={isLimitReached} />
             </div>
@@ -87,7 +86,7 @@ const MainContent = () => {
                 </div>
               ))}
             </div>
-            <div className="fixed bottom-0 right-0 max-w-full w-[80%] bg-gray-900 p-4 z-20">
+            <div className="fixed w-[83%] bottom-0 right-0 bg-gray-900 p-4 z-20 pt-0">
               {isLimitReached && (
                 <div className="text-center text-yellow-500 mb-2">
                   You have reached your 10-prompt limit for the free plan. Please upgrade to premium for unlimited prompts.
